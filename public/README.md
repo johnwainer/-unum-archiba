@@ -1,5 +1,5 @@
 # Unum
-Theme by Unum
+Theme by Unum Archiba
 
 ## Tener presente: ##
 1. Tener instalado `npm` o `yarn`
