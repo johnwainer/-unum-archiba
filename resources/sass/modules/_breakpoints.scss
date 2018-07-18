@@ -1,0 +1,200 @@
+@media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #main {
+
+        &.collapse-menu {
+
+            .menu-aside {
+                width: 6%;
+            }
+            
+            .main-container {
+                margin-left: 6.333333%;
+                width: 93.666667%;
+            }
+        }
+    }
+}
+
+@media handheld, only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #main {
+
+        &.collapse-menu {
+
+            .menu-aside {
+                width: 8%;
+            }
+            
+            .main-container {
+                margin-left: 8.333333%;
+                width: 91.666667%;
+            }
+        }
+
+        .main-container {
+            margin-left: 33.333333%;
+            width: 66.666667%;
+        }
+    }
+
+    .nav-profile {
+
+        .dropdown-menu {
+
+            li {
+
+                &.divider {
+                    display: list-item;
+                }
+
+                a {
+
+                    &.settings-style {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .profile {
+
+            .fa-bars {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .nav-settings-style  {
+        display: none;
+    }
+}
+
+@media handheld, only screen and (max-width: 736px) {
+
+    .logo-unum-footer {
+        display: none;
+    }
+
+    #main {
+
+        .main-container.main-fixed {
+            margin-left: 0;
+            overflow: initial;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .menu-aside {
+        position: relative;
+        left: 0 !important;
+        top: initial;
+
+        .action-side-menu {
+            display: none !important;
+        }
+
+        .main-menu {
+            display: none;
+            border-bottom: 1px solid #d7d7d7;
+        }
+
+        .username {
+
+            .action-main-menu {
+                color: white;
+                display: inline-block;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+
+                .fa-bars {
+                    margin-left: 15px;
+                }
+
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .nav-profile {
+        text-align: right;
+
+        .dropdown-menu {
+
+            li {
+
+                &.divider {
+                    display: list-item;
+                }
+
+                a {
+
+                    &.settings-style {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .profile {
+            padding-left: 0;
+            padding-right: 0;
+
+            .fa-bars {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .nav-settings-style  {
+        display: none;
+    }
+}
+
+@media handheld, only screen and (max-width: 414px) {
+
+    .header {
+        position: relative;
+    }
+
+    .menu-aside {
+
+        .username {
+            text-align: center;
+
+            .action-main-menu {
+                border-top: 1px solid #7f7f7f;
+                display: block;
+                margin-top: 15px;
+                padding-top: 15px;
+                position: relative;
+                text-align: center;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .nav-profile {
+        position: initial;
+
+        .profile {
+            padding-left: 0;
+            padding-right: 0;
+
+            .fa-bars {
+                margin-left: 0;
+            }
+
+            .profile-name,
+            .profile-thumb {
+                display: none;
+            }
+        }
+    }
+}

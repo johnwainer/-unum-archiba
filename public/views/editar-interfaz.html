@@ -1,0 +1,284 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Archiba - Vamos Buenos Aires</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Archiba - Vamos Buenos Aires">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <link href="//www.google-analytics.com" rel="dns-prefetch">
+        <link href="//ajax.googleapis.com" rel="dns-prefetch">
+
+        <link href="/css/components.min.css" rel="stylesheet">
+        <link href="/css/style.min.css" rel="stylesheet">
+
+        <script src="/js/components.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row header">
+                   <div class="col-md-3 col-sm-5 col-xs-6 title-company">
+                        <span>Archiba</span>
+                    </div>
+                    <div class="col-md-9 col-sm-7 col-xs-6">
+                        <div class="navbar-left nav-settings-style">
+                            <a href="editar-interfaz.html" class="btn btn-default btn-md">Editar interfaz</a>
+                        </div>
+                        <div class="navbar-right nav-profile dropdown">
+                            <a href="#" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="false">
+                                <span class="profile-thumb">
+                                    <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                                </span>
+                                <span class="profile-name">Alexander Pierce</span>
+                                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="editar-interfaz.html" class="settings-style">Editar interfaz</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#" class="">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="container-fluid" id="main">
+            <div class="row">
+                <aside class="col-md-3 col-sm-4 col-xs-12 menu-aside">
+                    <a href="#" class="action-side-menu">
+                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                    </a>
+                    <div class="username">
+                        <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                        <span class="collapse-menu-name">Nombre del usuario</span>
+                        <a href="#" class="action-main-menu">
+                            Menú
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <nav class="main-menu">
+                        <a href="#" class="menu-item">
+                            <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+                            <span class="collapse-menu-name">Gestor Documental</span>
+                        </a>
+                        <a href="#search-general" class="menu-item active" data-toggle="collapse" aria-expanded="true">
+                            <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                            <span class="collapse-menu-name">Consulta General</span>
+                            <b class="caret"></b>
+                        </a>
+                        <div class="menu-collapse collapse in" id="search-general" aria-expanded="true">
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Consulta previonales</span>
+                            </a>
+                            <a href="#" class="menu-item active">
+                                <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Consulta acuerdo 006</span>
+                            </a>
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Consulta documentos internet</span>
+                            </a>
+                        </div>
+                        <a href="#search-document" class="menu-item" data-toggle="collapse" aria-expanded="true">
+                            <i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>
+                            <span class="collapse-menu-name">Consulta Documentos COMPOSER</span>
+                            <b class="caret"></b>
+                        </a>
+                        <div class="menu-collapse collapse" id="search-document" aria-expanded="true">
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Administración</span>
+                            </a>
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Clases documentales</span>
+                            </a>
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Tipos documentales</span>
+                            </a>
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Reclasificar afiliado</span>
+                            </a>
+                            <a href="#" class="menu-item">
+                                <i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i>
+                                <span class="collapse-menu-name">Tabla de origines</span>
+                            </a>
+                        </div>
+                        <a href="#" class="menu-item">
+                            <i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>
+                            <span class="collapse-menu-name">Bandeja CRM</span>
+                        </a>
+                        <a href="#" class="menu-item">
+                            <i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>
+                            <span class="collapse-menu-name">Bandeja Internet</span>
+                        </a>
+                    </nav>
+                </aside>
+                <section class="col-md-9 col-md-offset-3 col-sm-7 col-xs-12 main-container main-fixed main-logo-header">
+                    <h2>Editar</h2>
+                    <section class="edit-layout">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <a href="#settings-logos" class="btn btn-md btn-block btn-color-unum btn-settings-collapse collapsed" data-toggle="collapse" aria-expanded="true">
+                                    Logos
+                                </a>
+                                <div class="settings-collapse collapse" id="settings-logos" aria-expanded="true">
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_upload-image" data-toggle="modal">
+                                        Logotipo superior
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_upload-image" data-toggle="modal">
+                                        Imagen fondo
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_upload-image" data-toggle="modal">
+                                        Logotipo barra
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_upload-image" data-toggle="modal">
+                                        Nombre empresa
+                                    </a>
+                                </div>
+                                <a href="#settings-colors" class="btn btn-md btn-block btn-color-unum btn-settings-collapse collapsed" data-toggle="collapse" aria-expanded="true">
+                                    Colores
+                                </a>
+                                <div class="settings-collapse collapse" id="settings-colors" aria-expanded="true">
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Fondo nombre
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Barra derecha
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Colores iconos
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Nombre empresa
+                                    </a>
+                                </div>
+                                <a href="#settings-components" class="btn btn-md btn-block btn-color-unum btn-settings-collapse collapsed" data-toggle="collapse" aria-expanded="true">
+                                    Componentes
+                                </a>
+                                <div class="settings-collapse collapse" id="settings-components" aria-expanded="true">
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Estilo letras
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Color letras
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Estilo iconos
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-block btn-default" data-target="#settings_change-color" data-toggle="modal">
+                                        Color iconos
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section> 
+                </section>
+            </div>
+        </section>
+        <footer class="logo-unum-footer">
+            <img src="/images/logo-unum-footer.png" class="center-block" alt="Unum">
+        </footer>
+
+        <!-- Modals -->
+
+        <!-- Modal Colores -->
+        <div class="modal fade" id="settings_change-color" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="/images/paleta-dommy-unum.png" class="img-responsive center-block" alt="">
+                            </div>
+                            <div class="col-md-3 col-md-offset-3 margin-top-30">
+                                <button type="button" class="btn btn-login btn-md btn-block">Escoger Color</button>
+                            </div>
+                            <div class="col-md-3 padding-left-0 margin-top-30">
+                                <div class="btn btn-default btn-md btn-block btn-select-color" disabled style="background-color: #01d5ee;">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 margin-top-15">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Continuar</button>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Upload Image -->
+        <div class="modal fade" id="settings_upload-image" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img class="img-thumbnail center-block" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjQ2MzdlM2YxZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2NDYzN2UzZjFlIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" style="width: 470px; height: 320px;" data-holder-rendered="true" data-src="holder.js/470x320" alt="470x320">
+                            </div>
+                            <div class="col-md-6 col-md-offset-3 margin-top-30 text-center">
+                                <button type="button" class="btn btn-default btn-md btn-select-position-image">
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-md btn-select-position-image">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-md btn-select-position-image">
+                                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-md btn-select-position-image">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-md btn-select-position-image">
+                                    <i class="fa fa-close" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-md btn-select-position-image">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="col-md-3 col-md-offset-3 margin-top-15">
+                                <button type="button" class="btn btn-login btn-md btn-block">Subir logo</button>
+                            </div>
+                            <div class="col-md-3 margin-top-15">
+                                <button type="button" class="btn btn-login btn-md btn-block">Ajustar</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 margin-top-15">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/script.min.js"></script>
+    </body>
+</html>

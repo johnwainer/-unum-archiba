@@ -1,0 +1,106 @@
+#main {
+    padding-top: 67px;
+
+    &.collapse-menu {
+
+        .action-side-menu {
+
+            .fa:before {
+                content: "\f101";
+            }
+        }
+
+        .menu-aside {
+            text-align: center;
+            width: 5%;
+
+            .collapse-menu-name {
+                display: none;
+            }
+
+            .menu-collapse.in {
+                margin-left: 0;
+            }
+        }
+
+        .main-container {
+            margin-left: 9.333333%;
+            width: 90.666667%;
+        }
+    }
+
+    .action-side-menu {
+        bottom: 66px;
+        color: white;
+        display: inline-block;
+        font-size: rem(20);
+        position: absolute;
+        right: 15px;
+    }
+
+    .edit-layout {
+
+        .btn-settings-collapse {
+            background-color: #004e72;
+            border-color: #004e72;
+            color: white;
+            margin-bottom: 15px;
+
+            &.collapsed {
+                background-color: #006293;
+                border-color: #006293;
+            }
+
+            
+            &:hover {
+                background-color: #004e72;
+                border-color: #004e72;
+                color: white;
+            }
+        }
+
+        .settings-collapse {
+            margin-bottom: 15px;
+            
+            .btn-default {
+                background-color: #a5a5a5;
+                border-color: #a5a5a5;
+                color: white;
+
+                
+                &:hover {
+                    background-color: #004e72;
+                    border-color: #004e72;
+                }
+            }
+        }
+    }
+
+    .main-container {
+        background: url('#{$bg}bg-logo-buenos-aires.png') no-repeat center;
+        padding: 30px 20px 15px;
+        transition: all .35s linear;
+
+        &.main-fixed {
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: fixed;
+        }
+
+        &.main-logo-header:after {
+            content: url('#{$img}/logo-unum-header.png');
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            z-index: -1;
+        }
+
+        .logo-unum-header {
+            bottom: 15px;
+            position: absolute;
+            right: 15px;
+        }
+    }
+}

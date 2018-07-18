@@ -1,0 +1,45 @@
+#login {
+    background-color: #f1f1f1;
+}
+
+.login-panel {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 15px;
+
+    .btn {
+        min-width: 167px;
+    }
+
+    .login-input {
+        border: none;
+        border-bottom: 1px solid #dddddd;
+        box-shadow: none;
+        border-radius: 0;
+        color: #838383;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .login-old_password {
+        @include fonts(#696969, $fontRegular, 15);
+        font-style: italic;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .panel {
+        border: none;
+        border-radius: 45px;
+
+        .panel-body {
+            padding: 35px 50px 40px;
+        }
+    }
+
+    @include placeholder(#006293, $fontRegular, 16);
+}

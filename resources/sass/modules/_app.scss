@@ -1,0 +1,352 @@
+button.close {
+
+  span {
+    font-family: $fontBold;
+    font-size: rem(41);
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.absolute-bottom-left { 
+  bottom: 0;
+  left: 0;
+  position: absolute; 
+}
+
+.absolute-bottom-right { 
+  bottom: 0;
+  position: absolute;
+  right: 0; 
+}
+
+.absolute-top-left { 
+  left: 0;
+  position: absolute;
+  top: 0; 
+}
+
+.absolute-top-right { 
+  position: absolute;
+  right: 0;
+  top: 0; 
+}
+
+.btn {
+  transition: all .15s ease-in-out;
+}
+
+.btn-login,
+.btn-color-unum {
+  background-color: #006293;
+  border-color: #006293;
+  color: white;
+
+  &:hover {
+    background-color: #004e72;
+    border-color: #004e72;
+    color: white;
+  }
+}
+
+.btn-default-unum {
+  background-color: transparent;
+  border-color: #006293;
+  color: #006293;
+
+  &:hover {
+    background-color: #006293;
+    border-color: #006293;
+    color: white;
+  }
+}
+
+.btn-select-color {
+  border-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,.5) !important;
+}
+
+.btn-select-position-image {
+  background-color: #bfbfbf;
+  color: white;
+  font-size: rem(17);
+  line-height: rem(16);
+  text-align: center;
+}
+
+.block { 
+  display: block; 
+}
+
+.center { 
+  margin: auto; 
+}
+
+.fixed { 
+  position: fixed;
+}
+
+.fixed-bottom-left { 
+  bottom: 0; 
+  left: 0; 
+  position: absolute; 
+}
+
+.fixed-bottom-right { 
+  bottom: 0; 
+  position: absolute; 
+  right: 0; 
+}
+
+.fixed-top-left { 
+  left: 0; 
+  position: absolute; 
+  top: 0; 
+}
+
+.fixed-top-right { 
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+}
+
+.inline { 
+  display: inline-block;
+  vertical-align: top; 
+}
+
+.inline-bottom { 
+  display: inline-block; 
+  vertical-align: bottom; 
+}
+
+.inline-center { 
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-left-0 {
+  margin-left: 0;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.margin-right-0 {
+  margin-right: 0;
+}
+
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+.margin-right-30 {
+  margin-right: 30px;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.modal {
+
+  .modal-content {
+    border-radius: 20px;
+  
+    .modal-body {
+
+      &:before {
+        content: url('#{$ico}/ico-modal-line-left.png');
+        left: 20px;
+      }
+
+      &:before,
+      &:after {
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+      }
+
+      &:after {
+        content: url('#{$ico}/ico-modal-line-right.png');
+        right: 20px;
+      }
+    }
+  }
+}
+
+.no-margin { 
+  margin: 0;
+}
+
+.no-padding { 
+  padding: 0;
+}
+
+.none { 
+  display: none; 
+}
+
+.opacity-0 { 
+  opacity: 0; 
+}
+
+.opacity-5 { 
+  opacity: .5; 
+}
+
+.opacity-15 { 
+  opacity: .15; 
+}
+
+.opacity-30 { 
+  opacity: .30; 
+}
+
+.opacity-50 { 
+  opacity: .50; 
+}
+
+.overflow { 
+  overflow: hidden; 
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.padding-bottom-15 {
+  padding-bottom: 15px;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-left-15 {
+  padding-left: 15px;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+}
+
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.padding-right-15 {
+  padding-right: 15px;
+}
+
+.padding-right-30 {
+  padding-right: 30px;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-top-15 {
+  padding-top: 15px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.panel-unum {
+  
+  .panel-heading {
+    background-color: #edc400;
+    border-color: #edc400;
+    cursor: pointer;
+
+    .panel-title {
+      @include fonts(white, $fontLight, 22);
+      position: relative;
+
+      &:after {
+        content: '\f0de';
+        font-family: FontAwesome;
+        font-size: rem(15);
+        position: absolute;
+        right: 0;
+        top: 35%;
+      }
+
+      &.collapsed:after {
+        content: '\f0dd';
+        top: 15%;
+      }
+    }    
+
+    &:hover {
+      background-color: #006293;
+      border-color: #006293;
+      color: white;
+    }
+  }
+
+  .panel-collapse {
+
+    .panel-body {
+
+    }
+  }
+}
+
+.relative { 
+  position: relative; 
+}
+
+.uppercase { 
+  text-transform: uppercase; 
+}

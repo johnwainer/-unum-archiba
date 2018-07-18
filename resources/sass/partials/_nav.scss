@@ -1,0 +1,142 @@
+.menu-aside {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 66px;
+    z-index: 1000;
+}
+
+.menu-aside {
+    background-color: #006293;
+    border-right: 1px solid white;
+    padding-left: 0;
+    padding-right: 0;
+
+    .username {
+        background-color: #004e72;
+        padding: 15px;
+        position: relative;
+        @include fonts(white, $fontBold, 18);
+
+        .action-main-menu {
+            display: none;   
+        }
+    }
+}
+
+.main-menu {
+    padding: 10px 15px 5px;
+    transition: all .45s linear;
+
+    .menu-collapse {
+        margin-left: 15px;
+
+        .menu-item {
+            margin-bottom: 3px;
+        }
+    }
+
+    .menu-item {
+        display: block;
+        @include fonts(white, $fontLight, 14.5);
+        text-decoration: none;
+        margin-bottom: 5px;
+        transition: all .25s linear;
+
+        &.active {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        &:focus,
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.navbar {
+    background-color: #00bee6;
+    border-bottom-color: white;
+
+    .header {
+
+        .title-company {
+            background-color: #00bee6;
+            border-bottom: 1px solid #00bee6;
+            min-height: 66px;
+            padding: 15px 10px 0;
+
+            span {
+                @include fonts(white, $fontBold, 26);
+                text-transform: uppercase;
+                word-break: break-word;
+            }
+        }
+    }
+}
+
+.nav-profile {
+
+    .dropdown-menu {
+        border-radius: 0;
+        width: 100%;
+
+        li {
+
+            &.divider {
+                display: none;
+            }
+
+            a {
+
+                &.settings-style {
+                    display: none;
+                }
+
+                @include fonts(#979797, $fontBold, 15);
+            }
+        }
+    }
+    
+    .profile {
+        display: block;
+        padding: 22px 10px 15px;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+
+        .fa-bars {
+            color: white;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .profile-name {
+            display: inline-block;
+            @include fonts(white, $fontBold, 18);
+            vertical-align: middle;
+        }
+
+        .profile-thumb {
+            display: inline-block;
+            color: white;
+            height: 25px;
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 25px;
+        }
+    }
+}
+
+.nav-settings-style {
+    padding-top: 15px;
+}
