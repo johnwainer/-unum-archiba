@@ -9,7 +9,7 @@ html {
   font-size: 16px; }
 
 body {
-  background-color: white;
+  background-color: #f1f1f1;
   font-family: "Comfortaa", sans-serif; }
   body.login {
     background-color: #f1f1f1; }
