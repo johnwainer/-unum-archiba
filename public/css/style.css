@@ -3051,8 +3051,6 @@ button.close span {
   display: block;
   height: 100%;
   left: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
   position: fixed;
   top: 66px;
   z-index: 1000; }

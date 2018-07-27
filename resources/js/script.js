@@ -24,6 +24,8 @@
             $('.action-main-menu').click(function () {
                 $('.main-menu').toggle();
             });
+
+            $('[data-toggle="tooltip"]').tooltip();
         }
     }
 
