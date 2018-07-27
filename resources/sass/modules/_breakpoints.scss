@@ -33,8 +33,26 @@
         }
 
         .main-container {
-            margin-left: 33.333333%;
-            width: 66.666667%;
+            margin-left: 25.333333%;
+            width: 74.666667%;
+        }
+    }
+
+    .menu-aside {
+        width: 25.333333%;
+    }
+
+    .navbar {
+
+        .header {
+
+            .title-company {
+                width: 25.333333%;
+            }
+
+            .col-sm-7 {
+                width: 74.666667%;
+            }
         }
     }
 
@@ -90,6 +108,7 @@
         position: relative;
         left: 0 !important;
         top: initial;
+        width: 100%;
 
         .action-side-menu {
             display: none !important;
@@ -101,13 +120,12 @@
         }
 
         .username {
+            display: block;
 
             .action-main-menu {
                 color: white;
-                display: inline-block;
-                position: absolute;
-                top: 25px;
-                right: 25px;
+                display: block;
+                text-align: center;
 
                 .fa-bars {
                     margin-left: 15px;
@@ -158,24 +176,14 @@
 
 @media handheld, only screen and (max-width: 414px) {
 
-    .header {
-        position: relative;
-    }
+    .navbar {
+        
+        .header {
+            position: relative;
 
-    .menu-aside {
-
-        .username {
-            text-align: center;
-
-            .action-main-menu {
-                border-top: 1px solid #7f7f7f;
-                display: block;
-                margin-top: 15px;
-                padding-top: 15px;
-                position: relative;
-                text-align: center;
-                top: 0;
-                right: 0;
+            .title-company,
+            .col-xs-6 {
+                width: 50%;
             }
         }
     }

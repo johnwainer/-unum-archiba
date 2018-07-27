@@ -78,8 +78,10 @@
 
     .main-container {
         background: url('#{$bg}bg-logo-buenos-aires.png') no-repeat center;
+        margin-left: 23%;
         padding: 30px 20px 15px;
         transition: all .35s linear;
+        width: 77%;
 
         &.main-fixed {
             height: 100%;

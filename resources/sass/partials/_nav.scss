@@ -15,16 +15,14 @@
     border-right: 1px solid white;
     padding-left: 0;
     padding-right: 0;
+    width: 23%;
 
     .username {
         background-color: #004e72;
+        display: none;
         padding: 15px;
         position: relative;
         @include fonts(white, $fontBold, 18);
-
-        .action-main-menu {
-            display: none;   
-        }
     }
 }
 
@@ -42,7 +40,7 @@
 
     .menu-item {
         display: block;
-        @include fonts(white, $fontLight, 14.5);
+        @include fonts(white, $fontLight, 13.5);
         text-decoration: none;
         margin-bottom: 5px;
         transition: all .25s linear;
@@ -56,6 +54,10 @@
         &:hover {
             color: white;
             text-decoration: none;
+        }
+
+        .fa.fa-2x {
+            font-size: rem(25.65);
         }
     }
 }
@@ -71,12 +73,16 @@
             border-bottom: 1px solid #00bee6;
             min-height: 66px;
             padding: 15px 10px 0;
-
+            width: 23%;
             span {
                 @include fonts(white, $fontBold, 26);
                 text-transform: uppercase;
                 word-break: break-word;
             }
+        }
+
+        .col-md-9 {
+            width: 77%;
         }
     }
 }

@@ -3061,17 +3061,17 @@ button.close span {
   background-color: #006293;
   border-right: 1px solid white;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  width: 23%; }
   .menu-aside .username {
     background-color: #004e72;
+    display: none;
     padding: 15px;
     position: relative;
     color: white;
     font-family: "Comfortaa-Bold", sans-serif;
     font-size: 1.125rem;
     font-weight: normal; }
-    .menu-aside .username .action-main-menu {
-      display: none; }
 
 .main-menu {
   padding: 10px 15px 5px;
@@ -3084,7 +3084,7 @@ button.close span {
     display: block;
     color: white;
     font-family: "Comfortaa-Light", sans-serif;
-    font-size: 0.90625rem;
+    font-size: 0.84375rem;
     font-weight: normal;
     text-decoration: none;
     margin-bottom: 5px;
@@ -3095,6 +3095,8 @@ button.close span {
     .main-menu .menu-item:focus, .main-menu .menu-item:hover {
       color: white;
       text-decoration: none; }
+    .main-menu .menu-item .fa.fa-2x {
+      font-size: 1.60312rem; }
 
 .navbar {
   background-color: #00bee6;
@@ -3103,7 +3105,8 @@ button.close span {
     background-color: #00bee6;
     border-bottom: 1px solid #00bee6;
     min-height: 66px;
-    padding: 15px 10px 0; }
+    padding: 15px 10px 0;
+    width: 23%; }
     .navbar .header .title-company span {
       color: white;
       font-family: "Comfortaa-Bold", sans-serif;
@@ -3111,6 +3114,8 @@ button.close span {
       font-weight: normal;
       text-transform: uppercase;
       word-break: break-word; }
+  .navbar .header .col-md-9 {
+    width: 77%; }
 
 .nav-profile .dropdown-menu {
   border-radius: 0;
@@ -3249,8 +3254,10 @@ button.close span {
         border-color: #004e72; }
   #main .main-container {
     background: url("../images/backgrounds/bg-logo-buenos-aires.png") no-repeat center;
+    margin-left: 23%;
     padding: 30px 20px 15px;
-    transition: all .35s linear; }
+    transition: all .35s linear;
+    width: 77%; }
     #main .main-container.main-fixed {
       height: 100%;
       overflow-x: hidden;
@@ -3288,8 +3295,14 @@ footer.logo-unum-footer {
     margin-left: 8.333333%;
     width: 91.666667%; }
   #main .main-container {
-    margin-left: 33.333333%;
-    width: 66.666667%; }
+    margin-left: 25.333333%;
+    width: 74.666667%; }
+  .menu-aside {
+    width: 25.333333%; }
+  .navbar .header .title-company {
+    width: 25.333333%; }
+  .navbar .header .col-sm-7 {
+    width: 74.666667%; }
   .nav-profile .dropdown-menu li.divider {
     display: list-item; }
   .nav-profile .dropdown-menu li a.settings-style {
@@ -3310,22 +3323,23 @@ footer.logo-unum-footer {
   .menu-aside {
     position: relative;
     left: 0 !important;
-    top: initial; }
+    top: initial;
+    width: 100%; }
     .menu-aside .action-side-menu {
       display: none !important; }
     .menu-aside .main-menu {
       display: none;
       border-bottom: 1px solid #d7d7d7; }
-    .menu-aside .username .action-main-menu {
-      color: white;
-      display: inline-block;
-      position: absolute;
-      top: 25px;
-      right: 25px; }
-      .menu-aside .username .action-main-menu .fa-bars {
-        margin-left: 15px; }
-      .menu-aside .username .action-main-menu:focus, .menu-aside .username .action-main-menu:hover {
-        text-decoration: none; }
+    .menu-aside .username {
+      display: block; }
+      .menu-aside .username .action-main-menu {
+        color: white;
+        display: block;
+        text-align: center; }
+        .menu-aside .username .action-main-menu .fa-bars {
+          margin-left: 15px; }
+        .menu-aside .username .action-main-menu:focus, .menu-aside .username .action-main-menu:hover {
+          text-decoration: none; }
   .nav-profile {
     text-align: right; }
     .nav-profile .dropdown-menu li.divider {
@@ -3341,19 +3355,11 @@ footer.logo-unum-footer {
     display: none; } }
 
 @media handheld, only screen and (max-width: 414px) {
-  .header {
+  .navbar .header {
     position: relative; }
-  .menu-aside .username {
-    text-align: center; }
-    .menu-aside .username .action-main-menu {
-      border-top: 1px solid #7f7f7f;
-      display: block;
-      margin-top: 15px;
-      padding-top: 15px;
-      position: relative;
-      text-align: center;
-      top: 0;
-      right: 0; }
+    .navbar .header .title-company,
+    .navbar .header .col-xs-6 {
+      width: 50%; }
   .nav-profile {
     position: initial; }
     .nav-profile .profile {
