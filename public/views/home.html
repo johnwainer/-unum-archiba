@@ -18,7 +18,7 @@
 
         <link href="/css/components.min.css" rel="stylesheet">
         <link href="/css/style.min.css" rel="stylesheet">
-
+        <script src="//code.jquery.com/jquery-1.6.1.js"></script>
         <script src="/js/components.min.js"></script>
     </head>
 
@@ -60,7 +60,7 @@
         </nav>
         <section class="container-fluid" id="main">
             <div class="row">
-                <aside class="col-md-3 col-sm-4 col-xs-12 menu-aside">
+                <aside class="col-md-3 col-sm-4 col-xs-12 menu-aside" id="sidebar">
                     <a href="#" class="action-side-menu">
                         <i class="fa fa-angle-double-left" aria-hidden="true"></i>
                     </a>
@@ -131,8 +131,10 @@
                             <span class="collapse-menu-name">Bandeja Internet</span>
                         </a>
                     </nav>
-                </aside>
-                <section class="col-md-9 col-md-offset-3 col-sm-7 col-xs-12 main-container main-fixed main-logo-header">
+                    <div id="dragbar"></div>
+                </aside>                
+                <section class="col-md-9 col-md-offset-3 col-sm-7 col-xs-12 main-container main-fixed main-logo-header" id="main2">
+                    
                     <h2>Comenzar</h2>
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12">
@@ -178,5 +180,72 @@
         </footer>
 
         <script src="/js/script.min.js"></script>
+        <script>
+
+        /**** Local storage *****/
+
+            if (typeof(Storage) !== "undefined") {
+            if(localStorage.getItem("sidebar_width_val") != null && localStorage.getItem("main2_width_val") != null && localStorage.getItem("main2_marginleft_val") != null){
+                $('#sidebar').css("width", localStorage.getItem("sidebar_width_val"));
+                $('#main2').css("width", (Number(window.innerWidth) - Number(localStorage.getItem("sidebar_width_val").replace("px", ""))) + "px");
+                $('#main2').css("margin-left", localStorage.getItem("main2_marginleft_val"));
+
+            }else{
+                localStorage.setItem("sidebar_width_val", $('#sidebar').css("width"));
+                localStorage.setItem("main2_width_val", $('#main2').css("width"));
+                localStorage.setItem("main2_marginleft_val", $('#sidebar').css("width"));
+
+            }
+            
+
+        } else {
+            alert("Tus preferencias no pueden ser guardadas localmente.");
+        }
+
+        /**** Local storage *****/
+
+        var i = 0;
+        var dragging = false;
+        $('#dragbar').mousedown(function(e) {
+          e.preventDefault();
+
+          dragging = true;
+          var main = $('#main2');
+          var ghostbar = $('<div>', {
+            id: 'ghostbar',
+            css: {
+              height: main.outerHeight(),
+              top: main.offset().top,
+              left: main.offset().left
+            }
+          }).appendTo('body');
+
+          $(document).mousemove(function(e) {
+            ghostbar.css("left", e.pageX + 2);
+          });
+
+        });
+
+        $(document).mouseup(function(e) {
+          if (dragging) {
+            var percentage = (e.pageX / window.innerWidth) * 100;
+            var mainPercentage = 100 - percentage;
+
+            $('#sidebar').css("width", percentage + "%");
+            $('#main2').css("width", mainPercentage + "%");
+            $('#main2').css("margin-left", percentage + "%");
+
+            localStorage.setItem("sidebar_width_val", $('#sidebar').css("width"));
+            localStorage.setItem("main2_width_val", $('#main2').css("width"));
+            localStorage.setItem("main2_marginleft_val", $('#sidebar').css("width"));
+
+            $('#ghostbar').remove();
+            $(document).unbind('mousemove');
+            dragging = false;
+          }
+        });
+
+
+        </script>
     </body>
 </html>
